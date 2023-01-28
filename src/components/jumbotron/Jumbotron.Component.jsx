@@ -12,7 +12,7 @@ export const Jumbotron = ({item})=>{
        <div style={style} className="inner">
             <div className="pane">
 
-                <h1 className="title">{title}</h1>
+                <h1 className="jumb-title">{title}</h1>
                 <h2 className="subtitle">{subTitle}</h2>
                 
             </div>
