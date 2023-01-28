@@ -3,6 +3,7 @@ import "./Accordion.styles.scss"
 import faqsData from "../../fixture/faqs.json"
 import { useState } from "react";
 import { FaqQuestion } from "../faq-question/FaqQuestion.component";
+import { OptForm } from "../opt-form/OptForm.component";
 export const Accordion = ()=>{
     const [open, setOpen] = useState(null);
     /*
@@ -22,7 +23,9 @@ export const Accordion = ()=>{
             <FaqQuestion key={idx} ele={ele} isOpen={open === idx} toggle={() => onClick(idx)} />
           )
 })}
+    <OptForm />
 
     </div>
+
     )
 }
