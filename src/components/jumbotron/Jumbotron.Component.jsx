@@ -2,11 +2,14 @@ import "./Jumbotron.styles.scss"
 
 export const Jumbotron = ({item})=>{
     console.log(item)
-    const {title, subTitle, image, alt} = item
+
+    const {title, subTitle, image, alt,direction} = item
+    const style = { flexDirection: `${direction}` }
     return(
     
-    
-       <div className="inner">
+    <div className="item">
+        
+       <div style={style} className="inner">
             <div className="pane">
 
                 <h1 className="title">{title}</h1>
@@ -17,6 +20,7 @@ export const Jumbotron = ({item})=>{
             <img src={image} alt={alt} />
             </div>
         </div>
+    </div>
             
     
           

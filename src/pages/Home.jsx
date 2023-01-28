@@ -12,7 +12,7 @@ export default function Home(){
             {JumboData.map(ele=>
             {
                 return(
-                    <div className="item">
+                    <div >
                         <Jumbotron key={ele.id} item={ele} />
                     </div>
                 )

@@ -2,6 +2,14 @@
     width: 50%;
 
 }
+.item{
+    display: flex;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    color: white;
+    overflow: hidden;
+}
+
 
 img{
     max-width: 100%;
@@ -36,6 +44,13 @@ img{
     }
 }
 @media (max-width: 600px) {
+    .inner{
+        display: block;
+        margin:0 auto
+    }
+    .pane{
+        padding:0
+    }
     .title{
         font-size: 35px;
     }
