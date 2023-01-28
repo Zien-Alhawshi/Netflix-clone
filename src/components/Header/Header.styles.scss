@@ -12,6 +12,9 @@
         padding: 18px 0;
         justify-content: space-between;
         align-items: center;
+        a{
+            text-decoration: none;
+        }
         .logo{
             height: 32px;
             width: 108px;
@@ -21,6 +24,7 @@
             display: block;
             background-color: #e50914;
             width: 84px;
+            margin-right:40px;
             height: fit-content;
             color: white;
             border: 0;
