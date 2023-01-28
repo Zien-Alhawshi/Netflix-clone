@@ -5,9 +5,11 @@ import { Jumbotron } from "../components/jumbotron/Jumbotron.Component"
 import { Footer } from "../components/footer/Footer.component"
 import { Accordion } from "../components/accordion/Accordion.componsnt"
 import { Fragment } from "react"
+import { Header } from "../components/Header/Header.component"
 export default function Home(){
     return(
         <Fragment>
+        <Header />
         <section className="container">
             {JumboData.map(ele=>
             {

@@ -6,60 +6,65 @@
     flex-direction: column;
     max-width: 815px;
     margin: auto;
-}
-.item-faq{
-    color:white
-}
-
-.title-faq{
-    font-size: 50px;
-    line-height: 1.1;
-    margin-top: 0;
-    margin-bottom: 8px;
-    color: white;
-    text-align: center;
-}
-.header-faq{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-bottom: 1px;
-    font-size: 26px;
-    font-weight: normal;
-    background: #303030;
-    padding: 0.8em 1.2em 0.8em 1.2em;
-    user-select: none;
-    align-items: center;
-    // width: 100%;
-    img{
-        filter: brightness(0) invert(1);
-        width: 24px;
-        
+    .title-faq{
+        font-size: 50px;
+        line-height: 1.1;
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: white;
+        text-align: center;
     }
+    .item-faq{
+        color:white;
+        .header-faq{
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            margin-bottom: 1px;
+            font-size: 26px;
+            font-weight: normal;
+            background: #303030;
+            padding: 0.8em 1.2em 0.8em 1.2em;
+            user-select: none;
+            align-items: center;
+            img{
+                filter: brightness(0) invert(1);
+                width: 24px;
+                
+            }
+        }
+        .body-faq{
+            max-width: 1200px;
+            font-size: 26px;
+            font-weight: normal;
+            line-height: normal;
+            background: #303030;
+            padding: 0.8em 1.2em 0.8em 1.2em;
+            user-select: none;
+            align-items: center;
+        
+        }
+    }
+    
+   
 }
-.body-faq{
-    max-width: 1200px;
-    font-size: 26px;
-    font-weight: normal;
-    line-height: normal;
-    background: #303030;
-    padding: 0.8em 1.2em 0.8em 1.2em;
-    user-select: none;
-    align-items: center;
 
-}
+
+
+
 @media (max-width: 600px) {
     .title-faq{
         font-size: 35px;
     }
-    .body-faq{
-        font-size: 16px;
-        line-height: 22px;
-    }
+  
     .header-faq{
         font-size: 16px;
         img{
             width: 16px;
         }
+    }
+    .body-faq{
+        font-size: 16px;
+        line-height: 22px;
     }
 }
