@@ -1,13 +1,17 @@
 import React from "react"
 import "./SignIn.styles.scss"
 import { Navbar } from "../components/Navbar/Navbar.component"
-import { Form } from "../components/form/Form.component"
-
+import { SignInForm } from "../components/form/SignInForm.component"
+import { Footer } from "../components/footer/Footer.component"
 export const  SignIn = ()=>{
 return(
+       <>
         <div className="framez">
             <Navbar />
-            <Form />
+            <SignInForm />
         </div>
+       <Footer />
+       </>
+
 )
 }
