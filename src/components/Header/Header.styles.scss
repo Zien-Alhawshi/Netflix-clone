@@ -1,45 +1,12 @@
 .header-parent{
     height: 100vh;
-    background-image: url("../../../images/misc/home-bg.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-image: url("../../../images/misc/home-bg.jpg");
+
    
-    .frame{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 18px 0;
-        justify-content: space-between;
-        align-items: center;
-        a{
-            text-decoration: none;
-        }
-        .logo{
-            height: 32px;
-            width: 108px;
-            margin:0 56px;
-        } 
-        .btn-link{
-            display: block;
-            background-color: #e50914;
-            width: 84px;
-            margin-right:40px;
-            height: fit-content;
-            color: white;
-            border: 0;
-            font-size: 15px;
-            border-radius: 3px;
-            padding: 8px 17px;
-            cursor: pointer;
-            text-decoration: none !important;
-            box-sizing: border-box;
-            
-            &:hover {
-                background: #f40612;
-            }
-        }
-    }
+  
     .feature{
         margin:auto auto
      } 

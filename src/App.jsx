@@ -1,11 +1,12 @@
 import React from "react"
 import {Routes, Route} from "react-router-dom"
 import Home  from "./pages/Home"
+import {SignIn} from "./pages/SignIn"
 function App() {
 
   return (
     <Routes>
-        <Route path="/signin" element={<p>I will be the sign in page</p>} />
+        <Route path="/signin" element={<SignIn />} />
             
         <Route path="/signup" element={<p>I will be the sign up page</p>} />
             

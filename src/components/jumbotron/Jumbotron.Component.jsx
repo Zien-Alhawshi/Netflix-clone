@@ -17,7 +17,7 @@ export const Jumbotron = ({item})=>{
                 
             </div>
             <div className="pane">
-            <img src={image} alt={alt} />
+                <img src={image} alt={alt} />
             </div>
         </div>
     </div>
