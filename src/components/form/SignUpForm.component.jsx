@@ -1,5 +1,12 @@
+
+
+
 import "./Form.styes.scss"
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import {createAuthUserWithEmailAndPassword,createUserDocumentFromAuth} from "../../context/firebase"
+
+
 import { InputEle,
     FormTitle,
     ErrorEle,
@@ -7,14 +14,36 @@ import { InputEle,
     FormText,
     SmallFormText } from "./Form-elements/formElements"
 export const SignUpForm  = ()=>{
-    const [firstName, setFirstName] = useState('');
+    const navigate  =  useNavigate()
+    const [displayName, setFirstName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const isInvalid = firstName === '' || password === '' || emailAddress === '';
-    
-    const handleSignup = (event) => {
+    const isInvalid = displayName === '' || password === '' || emailAddress === '';
+    const resetForm = ()=>{
+        setEmailAddress('');
+        setPassword('');
+        setError('');
+        navigate("/browse");
+    }
+    const handleSignup = async (event) => {
         event.preventDefault();
+        try{
+            const  {user}= await createAuthUserWithEmailAndPassword(
+                emailAddress,
+                password
+              );
+              console.log(user)            
+              await createUserDocumentFromAuth(user, {displayName})
+           
+        }
+        catch(error){
+            console.log(error)
+            
+
+        }
+        resetForm()
+    
     }
     return(
         <>
@@ -25,7 +54,7 @@ export const SignUpForm  = ()=>{
                <InputEle
                     placeholder="First Name"
                      type="text"
-                       value={firstName}
+                       value={displayName}
                        change = {({target})=> setFirstName(target.value)}
                        />
                         <InputEle
