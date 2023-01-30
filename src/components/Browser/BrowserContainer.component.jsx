@@ -3,15 +3,17 @@ import { useState } from "react"
 import { Footer } from "../footer/Footer.component"
 import { Profile } from "../Profile/Profile.component"
 import { Link } from "react-router-dom"
+import { SearchBox } from "../SearchBox/SearchBox.component"
 export const BrowserContainer =()=>{
     const [category, setCategory] = useState('series');
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
+    const [searchTerm, setSearchTerm] = useState('');
+
     const user = {
         displayName: "Karl",
         photoURL: "1"
     };
-    
     return(
         <>
             {
@@ -28,6 +30,7 @@ export const BrowserContainer =()=>{
                                     onClick={() => setCategory('films')}>
                                     Films
                             </p>
+                            <SearchBox className="location" searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                         </div>
                         <div className="browse-feature">
                             <h2 className="browse-feature-callout">Watch Joker Now</h2>

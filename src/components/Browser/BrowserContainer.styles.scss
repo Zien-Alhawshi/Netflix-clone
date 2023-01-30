@@ -4,6 +4,7 @@
 .browse-header{
      background-image: url("../../../images/misc/joker1.jpg");
      background-size: cover;
+
     .browser-navbar-header{
         color:white;
         display:flex;
@@ -20,8 +21,6 @@
         flex-direction: column;
         align-items: normal;
         width: 50%;
-        
-       
         .browse-feature-callout{
             color: white;
             font-size: 50px;
@@ -49,7 +48,6 @@
             margin-top: 10px;
             cursor: pointer;
             transition: 0.5s ease;
-            
             &:hover {
                 background: #ff1e1e;
                 color: white;
@@ -57,6 +55,10 @@
         }
     }
 
+}
+.searchBox{
+    margin-left: auto;
+    margin-right: 1em;
 }
 
 
