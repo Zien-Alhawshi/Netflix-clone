@@ -16,7 +16,9 @@ import {
     getDoc,
     setDoc,
     collection,
-    writeBatch
+    writeBatch,
+    query,
+    getDocs
 
 
 } from "firebase/firestore"
@@ -95,3 +97,18 @@ const config = {
     await signOut(auth)
     console.log("Sign out!")
   }
+
+
+  export const getCategoriesAndDocuments = async (tag) => {
+    const collectionRef = collection(db, tag);
+    const q = query(collectionRef);
+  
+    const querySnapshot = await getDocs(q);
+    const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+      const { title, items } = docSnapshot.data();
+      acc[title.toLowerCase()] = items;
+      return acc;
+    }, {});
+  
+    return categoryMap;
+  };

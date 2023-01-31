@@ -22,9 +22,9 @@ export const BrowserContainer =()=>{
             setLoading(false)
         }, 3000);
     }, [user])
-    useEffect(()=>{
-    addCollectionAndDocuments("films",FILMS_DATA )
-},[])
+//     useEffect(()=>{
+//     addCollectionAndDocuments("films",FILMS_DATA )
+// },[])
     return(
         <>
             {
