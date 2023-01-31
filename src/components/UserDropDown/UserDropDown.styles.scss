@@ -1,0 +1,67 @@
+.userDropDown{
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    position: relative;
+    
+    button {
+        cursor: pointer;
+    }
+    
+    &:hover > .drop-down {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+.header-picture{
+    background-size: contain;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    width: 100px;
+    top: 32px;
+    right: 10px;
+    .group:last-of-type p {
+        cursor: pointer;
+    }
+    
+    .group {
+        margin-bottom: 10px;
+        
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        
+       .header-link, .header-picture {
+        }
+    }
+    
+    button {
+        margin-right: 10px;
+    }
+    
+    .header-link {
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+.group-sec{
+    display: flex;
+    gap:0.5em;
+    align-items: center;
+    cursor: pointer;
+}
+.header-link:hover{
+    font-weight: 700;
+    cursor: pointer;
+
+}
