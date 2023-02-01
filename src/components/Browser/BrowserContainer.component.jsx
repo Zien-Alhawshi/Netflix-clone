@@ -7,7 +7,9 @@ import { Loading } from "../Loading/Loading.component"
 import { addCollectionAndDocuments } from "../../context/firebase"
 import SERIES_DATA from "../../Series"
 import FILMS_DATA from "../../Films"
-export const BrowserContainer =()=>{
+import { Films } from "../Content/Films.component"
+import { Series } from "../Content/Series.component"
+export const BrowserContainer =({films, series})=>{
     const [category, setCategory] = useState('series');
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
@@ -22,9 +24,7 @@ export const BrowserContainer =()=>{
             setLoading(false)
         }, 3000);
     }, [user])
-//     useEffect(()=>{
-//     addCollectionAndDocuments("films",FILMS_DATA )
-// },[])
+console.log(category)
     return(
         <>
             {
@@ -37,7 +37,8 @@ export const BrowserContainer =()=>{
                                 setCategory={setCategory}
                                 searchTerm={searchTerm}
                                 setSearchTerm={setSearchTerm}
-                                user= {user}  />        
+                                user= {user}  />  
+                                {category === "series"? <Series series={series}/>:category === "films"?<Films films={films} />:""}      
                                 <Footer />
                       </>}
                             

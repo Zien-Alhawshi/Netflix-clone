@@ -30,6 +30,6 @@ export const Browser = ()=>{
           console.log(series)
 
     return(
-        <BrowserContainer />
+        <BrowserContainer films={films} series={series} />
     )
 }
