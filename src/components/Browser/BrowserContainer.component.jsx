@@ -4,11 +4,9 @@ import { Footer } from "../footer/Footer.component"
 import { Profile } from "../Profile/Profile.component"
 import { BrowseTransferring } from "./BrowseTransferring.component"
 import { Loading } from "../Loading/Loading.component"
-import { addCollectionAndDocuments } from "../../context/firebase"
-import SERIES_DATA from "../../Series"
-import FILMS_DATA from "../../Films"
 import { Films } from "../Content/Films.component"
 import { Series } from "../Content/Series.component"
+
 export const BrowserContainer =({films, series})=>{
     const [category, setCategory] = useState('series');
     const [profile, setProfile] = useState({});
@@ -24,7 +22,6 @@ export const BrowserContainer =({films, series})=>{
             setLoading(false)
         }, 3000);
     }, [user])
-console.log(category)
     return(
         <>
             {

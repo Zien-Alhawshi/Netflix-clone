@@ -1,4 +1,7 @@
+
 import { initializeApp} from "firebase/app"
+
+
 
 import {
     
@@ -7,7 +10,8 @@ import {
     GoogleAuthProvider,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    signOut
+    signOut,
+    onAuthStateChanged
 
   } from "firebase/auth"
   import {
@@ -32,7 +36,7 @@ const config = {
     appId: "1:401899376664:web:138919818531370ae3f36d",
     measurementId: "G-6JVL7P0XQY"
   }
-  const firebase = initializeApp(config);
+  const firebasez = initializeApp(config);
   const provider = new GoogleAuthProvider()
   provider.setCustomParameters({
     prompt:"select_account"
@@ -112,3 +116,5 @@ const config = {
   
     return categoryMap;
   };
+
+
