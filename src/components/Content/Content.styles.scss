@@ -97,17 +97,7 @@ flex-wrap: wrap;
     flex-basis: 100%;
     width:100%;
     
-    .content{
-        .featureTitle{
-            font-size: 24px;
-            color: #e5e5e5;
-            font-weight: bold;
-            margin-left: 56px;
-            margin-right: 56px;
-            margin-top: 0;
-            margin-left: 0;
-        }
-    }
+  
 }
 .feature-whole{
     display: flex;
@@ -119,17 +109,65 @@ flex-wrap: wrap;
     background-position-x: right;
     background-repeat: no-repeat;
     background-color: black;
+    .content{
+        width:50%;
+        padding:1em;
+        margin:30px;
+        max-width: 500px;
+        line-height: normal;
+        .feature-title{
+            font-size: 24px;
+            color: #e5e5e5;
+            font-weight: bold;
+            margin-left: 56px;
+            margin-right: 56px;
+            margin-top: 0;
+            margin-left: 0;
+        }
+        .feature-text{
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            
+           
+        }
+        .feature-close{
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            
+            img {
+                filter: brightness(0) invert(1);
+                width: 24px;
+            }
+        }
+    }
+    img{
+        width:70%;
+        height:100%;
+    }
    
    
     
    
 }
 @media (max-width: 1000px) {
+    // .content{
+    //     margin: 30px;
+    // max-width: none;
+    // }
+}
+@media (max-width: 1000px) {
    .feature-whole{
     height: auto;
     background-size: auto;
     
-    .featureTitle{
+    .feature-title{
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 10px;
@@ -139,3 +177,35 @@ flex-wrap: wrap;
     }
    }
 }
+
+
+@media (max-width: 800px) {
+    .feature-text{
+        line-height: 22px;
+}
+    }
+
+    .feature-group{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        margin:30px 0
+        
+     
+    }
+    // ${Container}:first-of-type {
+    //     @media (min-width: 1100px) {
+    //         margin-top: -150px;
+    //     }
+    // }
+    .maturity{
+        border-radius: 15px;
+        width: 20px;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+        font-size: 12px;
+    }
