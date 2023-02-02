@@ -33,7 +33,6 @@ export const SignUpForm  = ()=>{
                 emailAddress,
                 password
               );
-              console.log(user)            
               await createUserDocumentFromAuth(user, {displayName})
            
         }

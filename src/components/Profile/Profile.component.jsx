@@ -1,7 +1,6 @@
 import "./Profile.styles.scss"
 import { Link } from "react-router-dom"
 export const Profile = ({ user, setProfile })=>{
-    console.log(user.photoURL)
     return(
         <>
         <Link to="/"><img className="logo" src="/images/misc/logo.svg"alt="Netflix"/> </Link>

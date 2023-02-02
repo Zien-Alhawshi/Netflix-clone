@@ -6,7 +6,6 @@ import { BrowseTransferring } from "./BrowseTransferring.component"
 import { Loading } from "../Loading/Loading.component"
 import { Films } from "../Content/Films.component"
 import { Series } from "../Content/Series.component"
-import Fuse from 'fuse.js';
 
 export const BrowserContainer =({films, series})=>{
     const [category, setCategory] = useState('series');

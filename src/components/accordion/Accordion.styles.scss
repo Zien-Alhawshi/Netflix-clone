@@ -52,11 +52,24 @@
 
 
 
-@media (max-width: 600px) {
-    .title-faq{
+@media (max-width: 1000px) {
+    .container-faqs .title-faq{
         font-size: 35px;
     }
-  
+    .inner{
+        display: block !important;
+        text-align: center;
+        .pane{
+            padding:0;
+            width:100% !important;
+        }
+    }
+    
+    .item .inner .pane .jumb-title{
+        font-size: 35px;
+
+    }
+    
     .header-faq{
         font-size: 16px;
         img{
