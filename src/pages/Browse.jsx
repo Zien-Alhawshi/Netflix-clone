@@ -26,8 +26,7 @@ export const Browser = ()=>{
               getCategoryMap();
            },
               []);
-          console.log(films)
-          console.log(series)
+       
 
     return(
         <BrowserContainer films={films} series={series} />

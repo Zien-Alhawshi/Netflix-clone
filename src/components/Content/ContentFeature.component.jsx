@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Content.styles.scss"
 export const FilmFeature = ({isOpen, toggle, ele})=>{
    
-        console.log(ele)
 return(
     <>
     {
@@ -15,6 +14,7 @@ return(
                         <p className="feature-text">{ele.description}</p>
                         <div className="feature-group">
                             <p className="feature-text">Genre: {ele.genre.charAt(0).toUpperCase() + ele.genre.slice(1)}</p>
+                            {/* <Player /> */}
                         </div>
                 </div>
                 <img src={`/images/films/${ele.genre}/${ele.slug}/large.jpg`} alt="" />

@@ -6,13 +6,15 @@ import { BrowseTransferring } from "./BrowseTransferring.component"
 import { Loading } from "../Loading/Loading.component"
 import { Films } from "../Content/Films.component"
 import { Series } from "../Content/Series.component"
+import Fuse from 'fuse.js';
 
 export const BrowserContainer =({films, series})=>{
     const [category, setCategory] = useState('series');
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
-
+    console.log(searchTerm)
+   
     const user = {
         displayName: "Karl",
         photoURL: "1"
@@ -35,10 +37,10 @@ export const BrowserContainer =({films, series})=>{
                                 searchTerm={searchTerm}
                                 setSearchTerm={setSearchTerm}
                                 user= {user}  />  
-                                {category === "series"? <Series series={series}/>:category === "films"?<Films films={films} />:""}      
+                                {category === "series"? <Series searchTerm={searchTerm} series={series}/>:category === "films"?<Films searchTerm={searchTerm} films={films} />:""}      
                                 <Footer />
                       </>}
-                            
+                             
                     </>: 
                     <>
                         <Profile  user={user} setProfile={setProfile} />

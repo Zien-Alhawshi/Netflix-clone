@@ -1,19 +1,24 @@
 import "./Content.styles.scss"
 import { SeriesFeature } from "./SeriesFeatur.component"
+import { useEffect } from "react"
+
 let elez= {}
 import { useState } from "react"
-export const Series = ({series})=>{
+export const Series = ({series, searchTerm})=>{
+   let searched = []
     const topics = Object.keys(series)
-    const values = Object.values(series)
+    let values = Object.values(series)
     const [opened, setOpened] = useState(null);
+
    
+
     const onClick = (ele,i) => {
         setOpened(opened === i ? null : i);
         // setOpened(true)
         elez=ele
 
       };
-   
+     
     return(
         <>
         <br />

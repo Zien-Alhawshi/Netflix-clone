@@ -2,6 +2,7 @@ import "./BrowserContainer.styles.scss"
 import { Link } from "react-router-dom"
 import { SearchBox } from "../SearchBox/SearchBox.component"
 import { UserDropDown } from "../UserDropDown/UserDropDown.component"
+
 export const BrowseTransferring = ({searchTerm,setSearchTerm, category, setCategory, user})=>{
     return(
         <div className="browse-header">
@@ -15,8 +16,8 @@ export const BrowseTransferring = ({searchTerm,setSearchTerm, category, setCateg
                     onClick={() => setCategory('films')}>
                     Films
             </p>
-            <SearchBox className="location" searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-            <UserDropDown user={user} />
+            {/* <SearchBox className="location" searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
+            <UserDropDown  user={user} />
         </div>
         <div className="browse-feature">
             <h2 className="browse-feature-callout">Watch Joker Now</h2>
