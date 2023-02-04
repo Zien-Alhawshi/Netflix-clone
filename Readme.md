@@ -25,8 +25,7 @@ To run the project locally you need to do the following:
 1. Clone the project first in your CMD by running the command, "git clone https://github.com/Zien-Alhawshi/Netflix-clone.git"
 2. Open the code in your preferred editor and in the main directory you need to install the required tools by running the command, "npm install"
 3. When the installing process is completed, you can test the app by running "npm run dev" and it will open up in your default browser.
-
-you can try the app here: 
+ 
 
 ## Future improvements 
 
