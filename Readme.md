@@ -31,5 +31,5 @@ if you like there are few things in mind to add like:
 1. Live search feature 
 2. pull images from an API 
 3. pull videos from an API 
-4. responsivedesign improvements (there is always things to add here 😉)
+4. responsive design improvements (there is always things to add here 😉)
 
