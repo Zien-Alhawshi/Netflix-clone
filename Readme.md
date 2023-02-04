@@ -1,5 +1,5 @@
 # Netflix clone project 
-
+<img src="/ScreenShots/homePage.jpg">
 A Netflix clone project is a great way to develop an online streaming platform similar to the popular streaming service. 
 
 ## Technologies used 
