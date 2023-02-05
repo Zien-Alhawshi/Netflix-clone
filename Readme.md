@@ -1,5 +1,6 @@
 # Netflix clone project 
 ![ScreenShot](./ScreenShots/homePage.jpg)
+<img src='ScreenShots\homePage.jpg' />
 <!-- <img src="./ScreenShots/homePage.jpg"> -->
 <img src="./ScreenShots/SignIn.jpg">
 <img src="./ScreenShots/BrowsePage.jpg">
