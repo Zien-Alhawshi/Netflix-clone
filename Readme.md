@@ -1,11 +1,11 @@
 # Netflix clone project 
-![ScreenShot](ScreenShots/homePage.jpg)
+<!-- ![ScreenShot](ScreenShots/homePage.jpg)
 <!-- <img src='./ScreenShots/homePage.jpg' /> -->
 <!-- <img src="./ScreenShots/homePage.jpg"> -->
-<img src="./ScreenShots/SignIn.jpg">
+<!-- <img src="./ScreenShots/SignIn.jpg">
 <img src="./ScreenShots/BrowsePage.jpg">
-<img src="./ScreenShots/browse_.jpg">
-<img src="./ScreenShots/movie_.jpg">
+<img src="./ScreenShots/browse_.jpg"> -->
+<!-- <img src="./ScreenShots/movie_.jpg"> --> 
 A Netflix clone project is a great way to develop an online streaming platform similar to the popular streaming service. 
 
 ## Technologies used 
