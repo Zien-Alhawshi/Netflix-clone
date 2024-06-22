@@ -1,4 +1,6 @@
 import "./VideoPlayer.styles.scss"
+import bunnyVideo from "../../../videos/bunny.mp4"; // Import your video file
+
 export const VideoPlayer = ({showPlayer, setShowPlayer})=>{
 
     return(
@@ -13,7 +15,7 @@ export const VideoPlayer = ({showPlayer, setShowPlayer})=>{
                 <button className="feature-close" ><img src="/images/icons/close.png" alt="Close" /></button>
 
                 <video muted  id="netflix-player" controls >
-                    <source src="/videos/bunny.mp4" type="video/mp4" />
+                    <source src={bunnyVideo} type="video/mp4" />
                 </video>
             </div>
         </div>:null
