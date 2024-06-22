@@ -1,75 +1,92 @@
-.container-form{
+.container-form {
     display: flex;
     justify-content: center;
-    // height: 100%;
     margin-top: 20px;
     flex-wrap: wrap;
-    .email-address{
-        max-width: 450px;
-        width: 100%;
-        border: 0;
-        padding: 10px;
-        height: 70px;
-        box-sizing: border-box;
-    
-    }
-    .cta{
+
+    .form-group {
         display: flex;
         align-items: center;
-        height: 70px;
-        background: #e50914;
-        color: white;
-        text-transform: uppercase;
-        padding: 0 32px;
-        font-size: 26px;
-        border: 0;
-        cursor: pointer;
-    
-        &:hover {
-            background: #f40612;
+        max-width: 450px;
+        width: 100%;
+        margin-bottom: 10px; /* Adjust spacing between form group and paragraph */
+
+        .email-address {
+            border: 0;
+            padding: 10px;
+            height: 70px;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 16px; /* Adjust font size for mobile */
         }
-        img {
-            margin-left: 10px;
-            filter: brightness(0) invert(1);
-            width: 24px;
+
+        .cta {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center text horizontally */
+            height: 70px;
+            background: #e50914;
+            color: white;
+            text-transform: uppercase;
+            padding: 0 32px;
+            font-size: 20px; /* Reduced font size */
+            border: 0;
+            cursor: pointer;
+            width: 250px; /* Increased button width */
+            transition: background 0.3s ease; /* Smooth transition for hover effect */
+
+            &:hover {
+                background: #f40612;
+            }
+
+            img {
+                margin-left: 10px;
+                filter: brightness(0) invert(1);
+                width: 24px;
+            }
         }
-    
     }
-    .form-text{
+
+    .form-text {
         font-size: 19px;
         color: white;
         text-align: center;
-    
+        width: 100%; /* Ensure text takes full width */
+        margin-top: 20px; /* Add margin to separate from form */
     }
-}
 
-
-
-@media (max-width: 600px) {
-    .form-text{
-        font-size: 16px;
-        line-height: 22px;
-    }
-}
-@media (max-width: 1000px) {
-   
-   .container-form{
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    justify-content: center;
-    margin: 0 auto;
-    .email-address{
-        height:40px;
-    }
-    .cta{
-        height: 50px;
-        font-size: 16px;
-        margin-top: 20px;
-        font-weight: bold;
-            img{
-                width: 16px;
+    @media (max-width: 600px) {
+        .form-group {
+            flex-direction: column; /* Stack input and button vertically on small screens */
+            max-width: 300px; /* Limit form group width on mobile screens */
+            margin: 0 auto; /* Center the form group horizontally */
+            padding: 0 20px; /* Add padding to separate from edges */
+            
+            .email-address {
+                height: 50px; /* Increase input height for better touch interaction */
             }
-       }
-   }
+            
+            .cta {
+                width: 100%; /* Full width button on mobile */
+                font-size: 18px; /* Adjust font size for mobile */
+                margin-top: 10px; /* Add margin above button */
+                
+                img {
+                    width: 20px; /* Adjust icon size for mobile */
+                }
+            }
+        }
+
+        .form-text {
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .container-form {
+            width: 70%;
+        }
+    }
 }
